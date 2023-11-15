@@ -22,7 +22,7 @@ const Contact = () => {
   };
   return (
     <motion.div>
-      <h1 className="text-[4rem]">CONTACT ///</h1>
+      <h1 className="text-7xl">CONTACT ///</h1>
       <form onSubmit={""}>
         <label className="flex flex-col">
           <span className="text-white text-[2rem] mb-4">Your Name</span>

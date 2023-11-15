@@ -14,8 +14,8 @@ const About = () => {
         hidden: { opacity: 0, y: 200 },
       }}
     >
-      <h1 className="text-[4rem]">ABOUT ///</h1>
-      <p className="text-[2rem] text-grey-text my-16 leading-16">
+      <h1 className="text-7xl">ABOUT ///</h1>
+      <p className="text-3xl text-grey-text my-16 leading-16">
         I am a Graduate from the University of Auckland with a GPA of 7.16. I
         specialize in Front End development but I am open to Full Stack and Back
         End opportunities. I have been coding since high school and have been
@@ -24,7 +24,7 @@ const About = () => {
         Disco and Jazz.
       </p>
       <div>
-        <p className="text-[2rem] text-grey-text my-16 leading-16">
+        <p className="text-3xl text-grey-text my-16 leading-16">
           Here's what I'm currently listening to:
         </p>
         <Spotify
