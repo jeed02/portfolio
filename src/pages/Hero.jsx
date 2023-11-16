@@ -1,6 +1,11 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
 import { motion } from "framer-motion";
+import ReactLogo from "../assets/icons/react-svgrepo-com.svg?react";
+import TailwindLogo from "../assets/icons/tailwind-svgrepo-com.svg?react";
+import HTMLLogo from "../assets/icons/html-5-logo-svgrepo-com.svg?react";
+import CSSLogo from "../assets/icons/css-3-svgrepo-com.svg?react";
+import JSLogo from "../assets/icons/javascript-svgrepo-com.svg?react";
 
 const Hero = () => {
   return (
@@ -28,14 +33,27 @@ const Hero = () => {
         </div>
 
         <motion.div
-          className="col-span-7"
+          className="py-16 col-span-7"
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="flex gap-10">
-            <h2 className="text-white lg:text-5xl leading-10">Tech Stack</h2>
-            <h2 className="text-white lg:text-5xl leading-10">|</h2>
+          <div className="flex flex-col items-center lg:flex-row">
+            <div className="flex my-16 ">
+              <h2 className="text-white text-5xl lg:text-5xl leading-10 mr-16">
+                Tech Stack
+              </h2>
+              <h2 className="hidden text-white text-white text-3xl lg:block text-5xl leading-10 m-0 ">
+                |
+              </h2>
+            </div>
+            <div className="grid grid-cols-2 gap-8 lg:grid-cols-5 mx-16">
+              <ReactLogo className="h-16 w-16" />
+              <TailwindLogo className="h-16 w-16" />
+              <HTMLLogo className="h-16 w-16" />
+              <CSSLogo className="h-16 w-16" />
+              <JSLogo className="h-16 w-16" />
+            </div>
           </div>
         </motion.div>
       </motion.div>
