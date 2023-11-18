@@ -3,6 +3,18 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 
+const defaultOptions = {
+  reverse: false, // reverse the tilt direction
+  max: 35, // max tilt rotation (degrees)
+  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
+
 const Projects = () => {
   return (
     <div className="my-10">
@@ -53,35 +65,14 @@ const Projects = () => {
             programmers, and showcase their solutions.
           </p>
           <div className="flex gap-16 justify-center">
-            <motion.a
-              href="https://github.com/yunwi5/code-like-pro"
-              rel="noreferrer"
-              target="_blank"
-              className="text-white text-3xl flex items-center gap-4 lg:text-5xl"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 1 },
-              }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Code
+            <div className="flex items-center gap-4">
+              <h2 className="text-3xl lg:text-5xl">Code</h2>
               <FaGithub className="project-icon" />
-            </motion.a>
-
-            <motion.a
-              href="https://code-like-pro-next.vercel.app"
-              rel="noreferrer"
-              target="_blank"
-              className="flex items-center gap-4 text-3xl lg:text-5xl"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 1 },
-              }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Live Demo
+            </div>
+            <div className="flex items-center gap-4">
+              <h2 className="text-3xl lg:text-5xl">Live Demo</h2>
               <FaExternalLinkAlt className="project-icon" />
-            </motion.a>
+            </div>
           </div>
         </motion.div>
       </div>

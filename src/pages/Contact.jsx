@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
@@ -21,48 +20,11 @@ const Contact = () => {
       [name]: value,
     });
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JD Briones",
-          from_email: form.email,
-          to_email: "jdbriones22@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
   return (
     <>
       <motion.div>
         <h1 className="text-7xl my-16">CONTACT ///</h1>
-        <form ref={formRef} onSubmit={handleSubmit}>
+        <form onSubmit={""}>
           <label className="flex flex-col">
             <span className="text-white text-[2rem] mb-4">Your Name</span>
             <input

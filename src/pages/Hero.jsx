@@ -38,7 +38,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="flex flex-col items-center md:flex-row">
+          <div className="flex flex-col items-center lg:flex-row">
             <div className="flex my-16 ">
               <h2 className="text-white text-5xl lg:text-5xl leading-10 mr-16">
                 Tech Stack
@@ -47,7 +47,7 @@ const Hero = () => {
                 |
               </h2>
             </div>
-            <div className="grid grid-cols-2 mx-8 gap-8 lg:grid-cols-5 lg:mx-16">
+            <div className="grid grid-cols-2 gap-8 lg:grid-cols-5 mx-16">
               <ReactLogo className="h-16 w-16" />
               <TailwindLogo className="h-16 w-16" />
               <HTMLLogo className="h-16 w-16" />
