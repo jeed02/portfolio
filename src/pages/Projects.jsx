@@ -65,14 +65,22 @@ const Projects = () => {
             programmers, and showcase their solutions.
           </p>
           <div className="flex gap-16 justify-center">
-            <div className="flex items-center gap-4">
+            <motion.a
+              href="https://github.com/yunwi5/code-like-pro"
+              target="_blank"
+              className="flex items-center gap-4"
+            >
               <h2 className="text-3xl lg:text-5xl">Code</h2>
               <FaGithub className="project-icon" />
-            </div>
-            <div className="flex items-center gap-4">
+            </motion.a>
+            <motion.a
+              href="https://code-like-pro-next.vercel.app"
+              target="_blank"
+              className="flex items-center gap-4"
+            >
               <h2 className="text-3xl lg:text-5xl">Live Demo</h2>
               <FaExternalLinkAlt className="project-icon" />
-            </div>
+            </motion.a>
           </div>
         </motion.div>
       </div>
