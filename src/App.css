@@ -22,5 +22,19 @@ body {
   padding: 1rem;
 }
 
-.hero {
+.project-icon {
+  font-size: 36px;
+}
+
+.hero-icon {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-icon {
+    font-size: 24px;
+  }
+  .hero-icon {
+    font-size: 36px;
+  }
 }

@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <div className="my-10">
       <motion.h1
-        className="text-[4rem] mb-10"
+        className="text-7xl mb-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -31,7 +31,7 @@ const Projects = () => {
       >
         PROJECTS ///
       </motion.h1>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <motion.div
           className="col-span-1"
           initial="hidden"
@@ -58,21 +58,29 @@ const Projects = () => {
             hidden: { opacity: 0, y: 200 },
           }}
         >
-          <h1 className="text-[4rem]">CodeLikePro</h1>
-          <p className="text-grey-text text-[2rem]">
+          <h1 className="text-4xl lg:text-6xl">CodeLikePro</h1>
+          <p className="text-grey-text text-2xl lg:text-3xl my-10">
             A practice website for programming students where they <br></br>
             create their own exercises, solve exercises from other <br></br>
             programmers, and showcase their solutions.
           </p>
           <div className="flex gap-16 justify-center">
-            <div className="flex items-center gap-4">
-              <h2 className="text-[3rem]">Code</h2>
-              <FaGithub size={34} />
-            </div>
-            <div className="flex items-center gap-4">
-              <h2 className="text-[3rem]">Live Demo</h2>
-              <FaExternalLinkAlt size={34} />
-            </div>
+            <motion.a
+              href="https://github.com/yunwi5/code-like-pro"
+              target="_blank"
+              className="flex items-center gap-4"
+            >
+              <h2 className="text-3xl lg:text-5xl">Code</h2>
+              <FaGithub className="project-icon" />
+            </motion.a>
+            <motion.a
+              href="https://code-like-pro-next.vercel.app"
+              target="_blank"
+              className="flex items-center gap-4"
+            >
+              <h2 className="text-3xl lg:text-5xl">Live Demo</h2>
+              <FaExternalLinkAlt className="project-icon" />
+            </motion.a>
           </div>
         </motion.div>
       </div>
