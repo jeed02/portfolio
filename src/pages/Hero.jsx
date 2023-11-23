@@ -22,9 +22,39 @@ const Hero = () => {
             Graduate Software Developer <br></br>based in Auckland, NZ
           </h2>
           <div className="flex gap-8 my-16">
-            <FaGithub fill="#fff" className="hero-icon" />
-            <FaLinkedin fill="#fff" className="hero-icon" />
-            <FaSpotify fill="#fff" className="hero-icon" />
+            <motion.a
+              href="https://github.com/jeed02"
+              target="_blank"
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 1 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaGithub fill="#fff" className="hero-icon" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/jd-briones/"
+              target="_blank"
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 1 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaLinkedin fill="#fff" className="hero-icon" />
+            </motion.a>
+            <motion.a
+              href="https://open.spotify.com/user/22npxbbtrhowy75h5h5nnzfbq?si=a23dcc359cc74007"
+              target="_blank"
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 1 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaSpotify fill="#fff" className="hero-icon" />
+            </motion.a>
           </div>
         </div>
 
