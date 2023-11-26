@@ -1,11 +1,17 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import ReactLogo from "../assets/icons/react-svgrepo-com.svg?react";
 import TailwindLogo from "../assets/icons/tailwind-svgrepo-com.svg?react";
 import HTMLLogo from "../assets/icons/html-5-logo-svgrepo-com.svg?react";
 import CSSLogo from "../assets/icons/css-3-svgrepo-com.svg?react";
 import JSLogo from "../assets/icons/javascript-svgrepo-com.svg?react";
+
+import LogoCanvas from "../components/LogoCanvas";
+
+import CVFile from "../assets/JD Resume.pdf";
+import AcademicTranscript from "../assets/SSR_TSRPT.pdf";
 
 const Hero = () => {
   return (
@@ -56,10 +62,32 @@ const Hero = () => {
               <FaSpotify fill="#fff" className="hero-icon" />
             </motion.a>
           </div>
+          <div className="flex gap-8">
+            <a
+              href={CVFile}
+              download="JD Briones CV"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+              <h1 className="text-xl">Download CV</h1>
+              <FiDownload />
+            </a>
+            <a
+              href={AcademicTranscript}
+              download="JD Briones Academic Transcript"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+              <h1 className="text-xl">Download Transcript</h1>
+              <FiDownload />
+            </a>
+          </div>
         </div>
 
         <div className="col-span-3 col-start-5">
-          <img src="src\assets\JD Logo.png" className="h-64 lg:h-full"></img>
+          <LogoCanvas />
         </div>
 
         <motion.div
