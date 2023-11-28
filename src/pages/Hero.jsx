@@ -7,6 +7,7 @@ import TailwindLogo from "../assets/icons/tailwind-svgrepo-com.svg?react";
 import HTMLLogo from "../assets/icons/html-5-logo-svgrepo-com.svg?react";
 import CSSLogo from "../assets/icons/css-3-svgrepo-com.svg?react";
 import JSLogo from "../assets/icons/javascript-svgrepo-com.svg?react";
+import ViteLogo from "../assets/icons/vite.svg?react";
 
 import LogoCanvas from "../components/LogoCanvas";
 
@@ -20,9 +21,9 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, ease: "easeOut" }}
-        className="flex flex-col gap-y-8 p-16 md:grid grid-cols-7 grid-rows-2 gap-y-36"
+        className="flex flex-col gap-y-8 p-16 lg:grid grid-cols-7 grid-rows-2 gap-y-36"
       >
-        <div className="col-span-4">
+        <div className="col-span-4 flex flex-col items-center lg:items-start">
           <h1 className="text-white text-6xl lg:text-9xl">Hi, I'm JD.</h1>
           <h2 className="text-grey-text text-3xl lg:text-5xl leading-10">
             Graduate Software Developer <br></br>based in Auckland, NZ
@@ -105,7 +106,8 @@ const Hero = () => {
                 |
               </h2>
             </div>
-            <div className="grid grid-cols-2 gap-8 lg:grid-cols-5 mx-16">
+            <div className="grid grid-cols-2 gap-8 lg:grid-cols-6 mx-16">
+              <ViteLogo className="h-16 w-16" />
               <ReactLogo className="h-16 w-16" />
               <TailwindLogo className="h-16 w-16" />
               <HTMLLogo className="h-16 w-16" />

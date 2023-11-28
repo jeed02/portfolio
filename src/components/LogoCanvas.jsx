@@ -20,8 +20,8 @@ const Logos = ({ isMobile }) => {
 
       <primitive
         object={JDLogo.scene}
-        scale={isMobile ? 90 : 150}
-        position={isMobile ? [0, -5, -1.3] : [0, -7, -3]}
+        scale={isMobile ? 70 : 140}
+        position={isMobile ? [0, -2, 0] : [0, -2, 0]}
         rotation={[-0.01, -0.1, -0.05]}
       />
     </mesh>
