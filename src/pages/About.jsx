@@ -25,6 +25,7 @@ const About = () => {
   return (
     <>
       <motion.div
+        id="about"
         className="my-16"
         initial="hidden"
         whileInView="visible"

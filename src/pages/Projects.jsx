@@ -17,7 +17,7 @@ const defaultOptions = {
 
 const Projects = () => {
   return (
-    <div className="my-10">
+    <div className="my-10" id="projects">
       <motion.h1
         className="text-7xl mb-10"
         initial="hidden"

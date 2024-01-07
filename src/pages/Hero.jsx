@@ -16,7 +16,7 @@ import AcademicTranscript from "../assets/SSR_TSRPT.pdf";
 
 const Hero = () => {
   return (
-    <div className="hero my-16 h-full lg:h-screen">
+    <div className="hero my-16 h-full lg:h-screen" id="home">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -100,7 +100,7 @@ const Hero = () => {
           <div className="flex flex-col items-center lg:flex-row">
             <div className="flex my-16 ">
               <h2 className="text-white text-5xl lg:text-5xl leading-10 mr-16">
-                Tech Stack
+                Built With:
               </h2>
               <h2 className="hidden text-white text-white text-3xl lg:block text-5xl leading-10 m-0 ">
                 |
