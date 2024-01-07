@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <>
-      <motion.div>
+      <motion.div id="contact">
         <h1 className="text-7xl my-16">CONTACT ///</h1>
         <form ref={formRef} onSubmit={handleSubmit}>
           <label className="flex flex-col">
