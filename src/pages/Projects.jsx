@@ -44,7 +44,7 @@ const Projects = () => {
           }}
         >
           <div>
-            <img src="src\assets\codelikepro-editor.png"></img>
+            <img src="/codelikepro-editor.png"></img>
           </div>
         </motion.div>
         <motion.div
