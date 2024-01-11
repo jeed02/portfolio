@@ -11,6 +11,7 @@
 :root {
   font-family: NeueBit;
   color: white;
+  overflow-x: hidden;
 }
 
 body {
