@@ -102,6 +102,9 @@ import { IoMdClose } from "react-icons/io";
 // };
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+  const toggleMenu = () => {};
+
   return (
     <nav class="flex items-center justify-between flex-wrap bg-black p-6 fixed w-full top-0 z-50">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -109,10 +112,14 @@ const Navbar = () => {
       </div>
       <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <GiHamburgerMenu />
+          <GiHamburgerMenu onClick={() => setToggle((toggle) => !toggle)} />
         </button>
       </div>
-      <div class="w-full block flex-grow items-center lg:flex lg:w-auto">
+      <div
+        className={`${
+          toggle ? "block" : "hidden"
+        } w-full  flex-grow items-center lg:flex lg:w-auto`}
+      >
         <div class="text-lg lg:flex-grow">
           <a
             href="#projects"
